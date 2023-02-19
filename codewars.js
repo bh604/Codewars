@@ -4,4 +4,17 @@
 // * [1, 2, 3, 4]  -> [4, 3, 2, 1]
 // * [9, 2, 0, 7]  -> [7, 0, 2, 9]
 
-const reverseList = list => list.reverse()
+// const reverseList = list => list.reverse()
+
+// Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
+
+// Example:
+
+// get_char(65)
+// should return:
+
+// 'A'
+
+function getChar(number) {
+    return String.fromChatCode(number)
+}
