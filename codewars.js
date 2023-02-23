@@ -48,6 +48,24 @@
 
 // * [1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12] -> [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
 
-function mergeArrays(arr1, arr2) {
-  return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
-}
+// function mergeArrays(arr1, arr2) {
+//   return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
+// }
+
+// Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
+
+// function isEmpty(obj) {
+//   for(let key in obj) {
+//     return false
+//   }
+//   return true
+// }
+
+
+// let schedule = {};
+
+// alert( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "get up";
+
+alert( isEmpty(schedule) ); // false
