@@ -159,15 +159,32 @@
 //     sum() returns the sum of these properties.
 //     mul() returns the multiplication product of these properties.
 
-function Calculator() {
-  this.read = function() {
-    this.a = +prompt('a?', 0);
-    this.b = +prompt('b?', 0);
+// function Calculator() {
+//   this.read = function() {
+//     this.a = +prompt('a?', 0);
+//     this.b = +prompt('b?', 0);
+//   }
+//   this.sum = function() {
+//     return this.a + this.b;
+//   }
+//   this.mul = function() {
+//     return this.a * this.b;
+//   }
+// }
+
+// Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
+
+// For example:
+
+// a = 1
+// b = 4
+// --> [1, 2, 3, 4]
+
+function between(a, b) {
+  // your code here
+  arr = []
+  for(i = a;i <= b; i++){ 
+      arr.push(i)
   }
-  this.sum = function() {
-    return this.a + this.b;
-  }
-  this.mul = function() {
-    return this.a * this.b;
-  }
+  return arr
 }
