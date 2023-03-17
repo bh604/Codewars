@@ -6,9 +6,6 @@
 
 // const reverseList = list => list.reverse()
 
-
-
-
 // Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.
 
 // Example:
@@ -22,8 +19,6 @@
 //     return String.fromChatCode(number)
 // }
 
-
-
 // The wide-mouth frog is particularly interested in the eating habits of other creatures.
 
 // He just can't stop asking the creatures he encounters what they like to eat. But, then he meets the alligator who just LOVES to eat wide-mouthed frogs!
@@ -33,7 +28,6 @@
 // Your goal in this kata is to create complete the mouth_size method this method takes one argument animal which corresponds to the animal encountered by the frog. If this one is an alligator (case-insensitive) return small otherwise return wide.
 
 // const mouthSize = animal => animal.toLowerCase() == 'alligator' ? 'small' : 'wide'
-
 
 // You are given two sorted arrays that both only contain integers. Your task is to find a way to merge them into a single one, sorted in asc order. Complete the function mergeArrays(arr1, arr2), where arr1 and arr2 are the original sorted arrays.
 
@@ -61,7 +55,6 @@
 //   return true
 // }
 
-
 // let schedule = {};
 
 // alert( isEmpty(schedule) ); // true
@@ -82,8 +75,6 @@
 // function sumDigits(number) {
 //   return Math.abs(number).toString().split('').reduce(function(a,b){return +a + +b}, 0);
 // }
-
-
 
 // Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
 
@@ -108,8 +99,6 @@
 // function sum(numbers) {
 //   return numbers.reduce((acc, c) => acc + c, 0)
 // }
-
-
 
 // Ahoy matey!
 
@@ -180,11 +169,31 @@
 // b = 4
 // --> [1, 2, 3, 4]
 
-function between(a, b) {
-  // your code here
-  arr = []
-  for(i = a;i <= b; i++){ 
-      arr.push(i)
-  }
-  return arr
+// function between(a, b){
+//   let arr = []
+//   for(let i = a; i <= b; i++) {
+//     arr.push(i)
+//   }
+//   return arr
+// }
+
+// What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
+
+// Example(Input --> Output)
+
+// "apple ban" --> ["apple 5", "ban 3"]
+// "you will win" -->["you 3", "will 4", "win 3"]
+// Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
+
+// Note: String will have at least one element; words will always be separated by a space.
+function addLength(str) {
+  str.forEach((str) => {
+    return str + str.length
+  })
+}
+
+// Correct one
+
+function addLength(str) {
+  return str.split(' ').map((s) => `${s} ${s.length}`)
 }
