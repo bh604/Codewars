@@ -186,14 +186,35 @@
 // Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
 
 // Note: String will have at least one element; words will always be separated by a space.
-function addLength(str) {
-  str.forEach((str) => {
-    return str + str.length
-  })
+// function addLength(str) {
+//   return str.split(' ').map((word) => `${word} ${word.length}`)
+// }
+
+// // Correct one
+
+// function addLength(str) {
+//   return str.split(' ').map((s) => `${s} ${s.length}`)
+// }
+
+// Numbers ending with zeros are boring.
+
+// They might be fun in your world, but not here.
+
+// Get rid of them. Only the ending ones.
+
+// 1450 -> 145
+// 960000 -> 96
+// 1050 -> 105
+// -1050 -> -105
+// Zero alone is fine, don't worry about it. Poor guy anyway
+
+function noBoringZeros(n) {
+  return n.map((n) => {})
 }
 
-// Correct one
-
-function addLength(str) {
-  return str.split(' ').map((s) => `${s} ${s.length}`)
+function noBoringZeros(n) {
+  while (n % 10 == 0 && n != 0) {
+    n /= 10
+  }
+  return n
 }
