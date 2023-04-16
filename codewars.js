@@ -249,7 +249,15 @@
 // There will always be at least one number in the input string.
 // Output string must be two numbers separated by a single space, and highest number is first.
 
-function highAndLow(numbers){
-  numbers = numbers.split(' ');
-  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+// function highAndLow(numbers){
+//   numbers = numbers.split(' ');
+//   return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+// }
+
+// Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+
+// Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+
+function inLove(flower1, flower2) {
+  return flower1 % 2 !== flower2 % 2;
 }
