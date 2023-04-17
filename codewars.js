@@ -258,6 +258,20 @@
 
 // Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
 
-function inLove(flower1, flower2) {
-  return flower1 % 2 !== flower2 % 2;
-}
+// function inLove(flower1, flower2) {
+//   return flower1 % 2 !== flower2 % 2;
+// }
+
+// Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+
+// Examples:
+// a = "xyaabbbccccdefww"
+// b = "xxxxyyyyabklmopq"
+// longest(a, b) -> "abcdefklmopqwxy"
+
+// a = "abcdefghijklmnopqrstuvwxyz"
+// longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+
+// function longest(s1, s2) {
+//   return Array.from(new Set(s1 + s2)).sort().join('');
+// }
