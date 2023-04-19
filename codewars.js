@@ -285,4 +285,13 @@
 // 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 // 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
-const addBinary = (a,b) => (a + b).toString(2)
+// const addBinary = (a,b) => (a + b).toString(2)
+
+Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+
+(In this case, all triangles must have surface greater than 0 to be accepted).
+
+function isTriangle(a,b,c)
+{
+   return a + b > c && a + c > b && c + b > a;
+}
