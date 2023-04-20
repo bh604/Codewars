@@ -287,11 +287,39 @@
 
 // const addBinary = (a,b) => (a + b).toString(2)
 
-Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
+// Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.
 
-(In this case, all triangles must have surface greater than 0 to be accepted).
+// (In this case, all triangles must have surface greater than 0 to be accepted).
 
-function isTriangle(a,b,c)
-{
-   return a + b > c && a + c > b && c + b > a;
-}
+// function isTriangle(a,b,c)
+// {
+//    return a + b > c && a + c > b && c + b > a;
+// }
+
+// Americans are odd people: in their buildings, the first floor is actually the ground floor and there is no 13th floor (due to superstition).
+
+// Write a function that given a floor in the american system returns the floor in the european system.
+
+// With the 1st floor being replaced by the ground floor and the 13th floor being removed, the numbers move down to take their place. In case of above 13, they move down by two because there are two omitted numbers below them.
+
+// Basements (negatives) stay the same as the universal level.
+
+// More information here
+
+// Examples
+// 1  =>  0 
+// 0  =>  0
+// 5  =>  4
+// 15  =>  13
+// -3  =>  -3
+
+function getRealFloor(n) {
+   if(n >= 1 && n <= 12) {
+     return n - 1
+   }else if(n > 13) {
+     return n - 2;
+   }else{
+     return n;
+   }
+ }
+ 
