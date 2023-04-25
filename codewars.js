@@ -375,28 +375,50 @@
 //   return dna.split('').map(function(v){ return pairs[v] }).join('');
 // }
 
-Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
+// Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
 
-"I love you"
-"a little"
-"a lot"
-"passionately"
-"madly"
-"not at all"
-If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
+// "I love you"
+// "a little"
+// "a lot"
+// "passionately"
+// "madly"
+// "not at all"
+// If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
 
-When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
+// When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
 
-Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
+// Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
 
-function howMuchILoveYou(nbPetals) {
-  let phrase = {    
-    0: "not at all",
-    1: "I love you",
-    2: "a little",
-    3: "a lot",
-    4: "passionately",
-    5: "madly"
+// function howMuchILoveYou(nbPetals) {
+//   let phrase = {    
+//     0: "not at all",
+//     1: "I love you",
+//     2: "a little",
+//     3: "a lot",
+//     4: "passionately",
+//     5: "madly"
+//   }
+//   return phrase[nbPetals%6]
+// }
+
+Your task is to write a function which returns the sum of a sequence of integers.
+
+The sequence is defined by 3 non-negative values: begin, end, step.
+
+If begin value is greater than the end, your function should return 0. If end is not the result of an integer number of steps, then don't add it to the sum. See the 4th example below.
+
+Examples
+
+2,2,2 --> 2
+2,6,2 --> 12 (2 + 4 + 6)
+1,5,1 --> 15 (1 + 2 + 3 + 4 + 5)
+1,5,3  --> 5 (1 + 4)
+
+const sequenceSum = (begin, end, step) => {
+  // May the Force be with you
+  let sum = 0
+  for(let i = begin; i <= end; i+=step){
+    sum+=i
   }
-  return phrase[nbPetals%6]
-}
+  return sum
+};
