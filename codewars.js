@@ -356,21 +356,47 @@
 // function problem(x) {
 // 	return typeof x === 'number' ? (x * 50) + 6 : 'Error'
 // }
-Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+// Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
 
-If you want to know more: http://en.wikipedia.org/wiki/DNA
+// If you want to know more: http://en.wikipedia.org/wiki/DNA
 
-In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+// In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
 
-More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
+// More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
 
-Example: (input --> output)
+// Example: (input --> output)
 
-"ATTGC" --> "TAACG"
-"GTAT" --> "CATA"
+// "ATTGC" --> "TAACG"
+// "GTAT" --> "CATA"
 
-var pairs = {'A':'T','T':'A','C':'G','G':'C'};
+// var pairs = {'A':'T','T':'A','C':'G','G':'C'};
 
-function DNAStrand(dna){
-  return dna.split('').map(function(v){ return pairs[v] }).join('');
+// function DNAStrand(dna){
+//   return dna.split('').map(function(v){ return pairs[v] }).join('');
+// }
+
+Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
+
+"I love you"
+"a little"
+"a lot"
+"passionately"
+"madly"
+"not at all"
+If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
+
+When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
+
+Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
+
+function howMuchILoveYou(nbPetals) {
+  let phrase = {    
+    0: "not at all",
+    1: "I love you",
+    2: "a little",
+    3: "a lot",
+    4: "passionately",
+    5: "madly"
+  }
+  return phrase[nbPetals%6]
 }
