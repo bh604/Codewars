@@ -401,24 +401,37 @@
 //   return phrase[nbPetals%6]
 // }
 
-Your task is to write a function which returns the sum of a sequence of integers.
+// Your task is to write a function which returns the sum of a sequence of integers.
 
-The sequence is defined by 3 non-negative values: begin, end, step.
+// The sequence is defined by 3 non-negative values: begin, end, step.
 
-If begin value is greater than the end, your function should return 0. If end is not the result of an integer number of steps, then don't add it to the sum. See the 4th example below.
+// If begin value is greater than the end, your function should return 0. If end is not the result of an integer number of steps, then don't add it to the sum. See the 4th example below.
 
-Examples
+// Examples
 
-2,2,2 --> 2
-2,6,2 --> 12 (2 + 4 + 6)
-1,5,1 --> 15 (1 + 2 + 3 + 4 + 5)
-1,5,3  --> 5 (1 + 4)
+// 2,2,2 --> 2
+// 2,6,2 --> 12 (2 + 4 + 6)
+// 1,5,1 --> 15 (1 + 2 + 3 + 4 + 5)
+// 1,5,3  --> 5 (1 + 4)
 
-const sequenceSum = (begin, end, step) => {
-  // May the Force be with you
-  let sum = 0
-  for(let i = begin; i <= end; i+=step){
-    sum+=i
-  }
-  return sum
-};
+// const sequenceSum = (begin, end, step) => {
+//   // May the Force be with you
+//   let sum = 0
+//   for(let i = begin; i <= end; i+=step){
+//     sum+=i
+//   }
+//   return sum
+// };
+
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+Examples:
+Input: 42145 Output: 54421
+
+Input: 145263 Output: 654321
+
+Input: 123456789 Output: 987654321
+
+function descendingOrder(n) {
+  return +n.toString().split('').sort().reverse().join('');
+}
