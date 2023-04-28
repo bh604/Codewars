@@ -423,15 +423,31 @@
 //   return sum
 // };
 
-Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-Examples:
-Input: 42145 Output: 54421
+// Examples:
+// Input: 42145 Output: 54421
 
-Input: 145263 Output: 654321
+// Input: 145263 Output: 654321
 
-Input: 123456789 Output: 987654321
+// Input: 123456789 Output: 987654321
 
-function descendingOrder(n) {
-  return +n.toString().split('').sort().reverse().join('');
+// function descendingOrder(n) {
+//   return +n.toString().split('').sort().reverse().join('');
+// }
+
+You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+
+#Examples:
+
+Kata.getMiddle("test") should return "es"
+
+Kata.getMiddle("testing") should return "t"
+
+Kata.getMiddle("middle") should return "dd"
+
+Kata.getMiddle("A") should return "A"
+
+function getMiddle(s) {
+  return s.slice((s.length-1)/2,s.length/2+1)
 }
