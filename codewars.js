@@ -436,18 +436,32 @@
 //   return +n.toString().split('').sort().reverse().join('');
 // }
 
-You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 
-#Examples:
+// #Examples:
 
-Kata.getMiddle("test") should return "es"
+// Kata.getMiddle("test") should return "es"
 
-Kata.getMiddle("testing") should return "t"
+// Kata.getMiddle("testing") should return "t"
 
-Kata.getMiddle("middle") should return "dd"
+// Kata.getMiddle("middle") should return "dd"
 
-Kata.getMiddle("A") should return "A"
+// Kata.getMiddle("A") should return "A"
 
-function getMiddle(s) {
-  return s.slice((s.length-1)/2,s.length/2+1)
+// function getMiddle(s) {
+//   return s.slice((s.length-1)/2,s.length/2+1)
+// }
+
+You need to write a function that reverses the words in a given string. A word can also fit an empty string. If this is not clear enough, here are some examples:
+
+As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
+
+Example (Input --> Output)
+
+"Hello World" --> "World Hello"
+"Hi There." --> "There. Hi"
+
+function reverse(string){
+  //your code here
+  return string.split(' ').reverse().join(' ')                   
 }
