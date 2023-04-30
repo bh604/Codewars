@@ -452,16 +452,30 @@
 //   return s.slice((s.length-1)/2,s.length/2+1)
 // }
 
-You need to write a function that reverses the words in a given string. A word can also fit an empty string. If this is not clear enough, here are some examples:
+// You need to write a function that reverses the words in a given string. A word can also fit an empty string. If this is not clear enough, here are some examples:
 
-As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
+// As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
 
-Example (Input --> Output)
+// Example (Input --> Output)
 
-"Hello World" --> "World Hello"
-"Hi There." --> "There. Hi"
+// "Hello World" --> "World Hello"
+// "Hi There." --> "There. Hi"
 
-function reverse(string){
-  //your code here
-  return string.split(' ').reverse().join(' ')                   
-}
+// function reverse(string){
+//   //your code here
+//   return string.split(' ').reverse().join(' ')                   
+// }
+
+Instructions
+Write a function that takes a single string (word) as argument. The function must return an ordered list containing the indexes of all capital letters in the string.
+
+Example
+Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
+
+var capitals = function (word) {
+  var caps = [];
+	for(var i = 0; i < word.length; i++) {
+    if(word[i].toUpperCase() == word[i]) caps.push(i);
+  }
+  return caps;
+};
