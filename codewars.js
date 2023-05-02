@@ -506,12 +506,26 @@
 
 // Assumption: Assume that Desired Principal 'D' is always greater than the initial principal. However it is best to take into consideration that if Desired Principal 'D' is equal to Principal 'P' this should return 0 Years.
 
-function calculateYears(principal, interest, tax, desired) {
-  // your code
-  var years = 0;
-  while(principal < desired){
-    principal += (principal * interest) * (1 - tax);
-    years++;
-  }
-  return years;
+// function calculateYears(principal, interest, tax, desired) {
+//   // your code
+//   var years = 0;
+//   while(principal < desired){
+//     principal += (principal * interest) * (1 - tax);
+//     years++;
+//   }
+//   return years;
+// }
+
+
+Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+
+Example:
+["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+
+None of the arrays will be empty, so you don't have to worry about that!
+
+function removeEveryOther(arr){
+  return arr.filter((x,i) => {
+    return i % 2 === 0
+  })
 }
