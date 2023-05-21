@@ -712,3 +712,12 @@
 // function strCount(str, letter){  
 //   return str.split(letter).length-1
 // }
+
+// Write a function which calculates the average of the numbers in a given list.
+
+// Note: Empty arrays should return 0.
+
+// function findAverage(array) {
+//   // your code here
+//   return array.length ? array.reduce((acc,c) => acc + c, 0) / array.length : 0
+// }
