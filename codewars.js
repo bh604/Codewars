@@ -721,3 +721,13 @@
 //   // your code here
 //   return array.length ? array.reduce((acc,c) => acc + c, 0) / array.length : 0
 // }
+
+// Complete the function/method so that it returns the url with anything after the anchor (#) removed.
+
+// Examples
+// "www.codewars.com#about" --> "www.codewars.com"
+// "www.codewars.com?page=1" -->"www.codewars.com?page=1"
+
+// function removeUrlAnchor(url){
+//     return url.split('#')[0];
+//   }
