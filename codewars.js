@@ -219,7 +219,6 @@
 //   return n
 // }
 
-
 // To find the volume (centimeters cubed) of a cuboid you use the formula:
 
 // volume = Length * Width * Height
@@ -307,7 +306,7 @@
 // More information here
 
 // Examples
-// 1  =>  0 
+// 1  =>  0
 // 0  =>  0
 // 5  =>  4
 // 15  =>  13
@@ -326,7 +325,6 @@
 //  function getRealFloor(n) {
 //   return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
 // }
- 
 
 // In this simple exercise, you will build a program that takes a value, integer , and returns a list of its multiples up to another value, limit . If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
 
@@ -334,10 +332,10 @@
 
 // function findMultiples(int,limit){
 //   let result = []
-  
+
 //   for (let i = int; i<=limit ; i+=int)
 //     result.push(i)
-    
+
 //   return result
 // }
 
@@ -390,7 +388,7 @@
 // Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
 
 // function howMuchILoveYou(nbPetals) {
-//   let phrase = {    
+//   let phrase = {
 //     0: "not at all",
 //     1: "I love you",
 //     2: "a little",
@@ -463,7 +461,7 @@
 
 // function reverse(string){
 //   //your code here
-//   return string.split(' ').reverse().join(' ')                   
+//   return string.split(' ').reverse().join(' ')
 // }
 
 // Instructions
@@ -488,11 +486,10 @@
 
 // Example:
 
-//   Let P be the Principal = 1000.00      
-//   Let I be the Interest Rate = 0.05      
-//   Let T be the Tax Rate = 0.18      
+//   Let P be the Principal = 1000.00
+//   Let I be the Interest Rate = 0.05
+//   Let T be the Tax Rate = 0.18
 //   Let D be the Desired Sum = 1100.00
-
 
 // After 1st Year -->
 //   P = 1041.00
@@ -515,7 +512,6 @@
 //   }
 //   return years;
 // }
-
 
 // Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
 
@@ -628,7 +624,7 @@
 //   let vowels = 'aeiou'
 //   return str.split('')
 //             .filter(letter => !vowels.includes(letter.toLowerCase()))
-//             .join('')        
+//             .join('')
 // }
 
 // As a part of this Kata, you need to create a function that when provided with a triplet, returns the index of the numerical element that lies between the other two elements.
@@ -698,7 +694,7 @@
 // The first argument can be an empty string
 // In languages with no distinct character data type, the second argument will be a string of length 1
 
-// function strCount(str, letter){  
+// function strCount(str, letter){
 //   //code here
 //   let count = 0;
 //   for(let i = 0; i <= str.length-1; i++){
@@ -709,7 +705,7 @@
 //   return count
 // }
 
-// function strCount(str, letter){  
+// function strCount(str, letter){
 //   return str.split(letter).length-1
 // }
 
@@ -733,7 +729,6 @@
 //   }
 
 // Create a method that accepts a list and an item, and returns true if the item belongs to the list, otherwise false.
-
 
 // function include(arr, item){
 //     // ...
@@ -778,17 +773,27 @@
 //   return nums !== null ? nums.sort(function(a,b){return a-b}) : [];
 // }
 
-Make a program that filters a list of strings and returns a list with only your friends name in it.
+// Make a program that filters a list of strings and returns a list with only your friends name in it.
 
-If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+// If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
 
-Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+// Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 
-i.e.
+// i.e.
 
-friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
-Note: keep the original order of the names in the output.
+// friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+// Note: keep the original order of the names in the output.
 
-function friend(friends) {
-  return friends.filter(n => n.length === 4)
-}
+// function friend(friends) {
+//   return friends.filter(n => n.length === 4)
+// }
+
+// Fix the function
+// I created this function to add five to any number that was passed in to it and return the new value. It doesn't throw any errors but it returns the wrong number.
+
+// Can you help me fix the function?
+
+// function addFive(num){
+//   let total = num + 5
+//   return total
+// }
