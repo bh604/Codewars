@@ -854,3 +854,7 @@
 // function expressionMatter(a, b, c) {
 //   return Math.max(a+b+c, a*b*c, (a+b)*c, a*(b+c));
 // }
+
+// how do you return a new array of numbers that includes every even number from the previous Arrays
+
+// let evenNums = (arr) => arr.filter((n) => n % 2 === 0);
