@@ -890,3 +890,6 @@
 // 			.map((x) => x * x)
 // 			.join('')
 // 	);
+
+// how to return even numbers only from an Array
+// let evenNums = (arr) => arr.filter((num) => num % 2 === 0);
