@@ -902,11 +902,19 @@
 // 2 -> 3 (1 + 2)
 // 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
 
-let summation = function (num) {
-	let result = 0;
-	for (let i = 1; i <= num; i++) {
-		result += i;
-	}
+// let summation = function (num) {
+// 	let result = 0;
+// 	for (let i = 1; i <= num; i++) {
+// 		result += i;
+// 	}
+// 	return result;
+// };
 
-	return result;
-};
+// Create a function that accepts a list/array and a number n, and returns a list/array of the first n elements from the list/array.
+
+// function take(arr, n) {
+//   // Your code here
+//   return arr.slice(0,n)
+// }
+
+let take = (arr, n) => arr.slice(0, n);
